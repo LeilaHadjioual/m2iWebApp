@@ -1,0 +1,20 @@
+﻿@using CoreFirstWebSite.Models.Links
+@model LinksListViewModel
+
+
+<h1>Ma Liste de liens</h1>
+
+<div>
+    <i>Nombre de liens à afficher : @Model.AllLinks.Count() </i>
+</div>
+
+<div>
+    @foreach(var lien in Model.AllLinks)
+    {
+        <p class="text-bold">@lien.Name</p>
+        <p>@lien.Description</p>
+        <a class="btn btn-primary" href="@lien.Url" target="_blank">Go !</a>
+    }
+</div>
+
+
