@@ -1,8 +1,13 @@
 ﻿@using CoreFirstWebSite.Models.Users
 @model UsersListViewModel
 
+@{
+    ViewData["Title"] = "Les Utilisateurs";
+}
 
-<h1>Ma Liste d'utilisteurs</h1>
+<h1>@ViewData["Title"] <i class="fa-solid fa-circle-check"></i></h1>
+@await Html.PartialAsync("_ReseauxSociaux")
+
 
 <div>
     <i>Nombre d'utilisateurs : @Model.AllUsers.Count()</i>
@@ -15,5 +20,16 @@
         <p>@user.Firstname</p>
         <p>@user.Mail</p>
         <a class="btn btn-primary" href="mailto:@user.Mail" target="_blank">Envoyer un mail</a>
+        <a class="btn btn-primary" asp-controller="Users" asp-action="GetUser" asp-route-idUser="@user.Id" >Modifier</a>
+
     }
 </div>
+
+@section Scripts{
+    <script src="~/js/Users/index.js" asp-append-version="true"></script>
+}
+
+@section FichiersCss{
+    <!-- sera dans la section des fichiers css -->
+    <link rel="stylesheet" href="~/css/Users/index.css" />
+}

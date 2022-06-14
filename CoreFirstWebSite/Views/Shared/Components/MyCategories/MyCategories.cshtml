@@ -1,0 +1,10 @@
+﻿@using CoreFirstWebSite.Models.Category
+@model CategoriesListViewModel
+
+<div>
+    @foreach(var category in Model.AllCategories)
+    {
+        <p>@category.Name</p>
+        <p>@category.Color</p>
+    }
+</div>

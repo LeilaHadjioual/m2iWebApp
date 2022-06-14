@@ -1,0 +1,27 @@
+﻿@using m2iWebApp.Models
+@model LinkModel
+
+@{
+    ViewData["Title"] = "Un Lien";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@await Html.PartialAsync("_ReseauxSociaux")
+
+
+<form>
+<input type="hidden" asp-for="Id" />
+@Html.TextBoxFor(model => model.Name)
+@Html.TextBoxFor(model => model.Description)
+@Html.TextBoxFor(model => model.Url)
+</form>
+
+
+@section Scripts{
+}
+
+@section FichiersCss{
+}
+
+

@@ -1,0 +1,9 @@
+﻿@using CoreFirstWebSite.Models.Links
+@model CategoryListViewModel
+
+<div>
+    @foreach(var link in Model.AllLinks)
+    {
+        <a>@link.Name</a>
+    }
+</div>

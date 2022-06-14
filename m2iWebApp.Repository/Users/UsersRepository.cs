@@ -17,14 +17,14 @@ namespace m2iWebApp.Repository.Users
                     Id = 1,
                     Name = "DURAND",
                     Firstname = "Toto",
-                    Mail = "toto.durand@yopmail.com"
+                    Mail = "toto.durand@gmail.com"
                 },
                 new UserModel()
                 {
                     Id = 2,
                     Name = "DUPONT",
                     Firstname = "Titi",
-                    Mail = "titi.dupont@yopmail.com"
+                    Mail = "titi.dupont@gmail.com"
                 },
             };
         }

@@ -1,0 +1,29 @@
+﻿@using CoreFirstWebSite.Models.Category
+@model CategoriesListViewModel
+
+@{
+    ViewData["Title"] = "Les catégories";
+}
+
+<h1>@ViewData["Title"]</h1>
+@await Html.PartialAsync("_ReseauxSociaux")
+
+
+<div>
+    <i>Nombre de catégories à afficher : @Model.AllCategories.Count() </i>
+</div>
+
+<div>
+    @foreach(var category in Model.AllCategories)
+    {
+        <p class="text-bold">@category.Name</p>
+        <p>@category.Color</p>
+        
+    }
+</div>
+
+@section Scripts{
+}
+
+@section FichiersCss{
+}

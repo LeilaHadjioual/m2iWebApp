@@ -1,0 +1,1 @@
+﻿alert("salut !! alerte javascript, je suis sur ma page des liens");

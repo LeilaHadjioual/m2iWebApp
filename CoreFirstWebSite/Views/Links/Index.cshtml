@@ -1,8 +1,16 @@
 ﻿@using CoreFirstWebSite.Models.Links
-@model LinksListViewModel
+@model CategoryListViewModel
 
+@{
+    ViewData["Title"] = "Les Liens";
+}
 
-<h1>Ma Liste de liens</h1>
+<h1>@ViewData["Title"]</h1>
+@*on affiche une vue partielle (dossier views/shared)*@
+@await Html.PartialAsync("_ReseauxSociaux")
+@*on affiche une vue component (dossier views/shared/Components/mMyCategories)*@
+@await Component.InvokeAsync("MyCategories")
+
 
 <div>
     <i>Nombre de liens à afficher : @Model.AllLinks.Count() </i>
@@ -13,8 +21,15 @@
     {
         <p class="text-bold">@lien.Name</p>
         <p>@lien.Description</p>
+        <a class="btn btn-primary" asp-controller="Links" asp-action="Link" asp-route-idLien="@lien.Id" >Modifier</a>
         <a class="btn btn-primary" href="@lien.Url" target="_blank">Go !</a>
     }
 </div>
 
+@section Scripts{
+    <script src="~/js/Links/index.js" asp-append-version="true"></script>
+}
 
+@section FichiersCss{
+    <link rel="stylesheet" href="~/css/Links/index.css" />
+}

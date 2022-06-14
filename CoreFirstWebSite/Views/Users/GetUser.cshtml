@@ -1,0 +1,34 @@
+﻿@using m2iWebApp.Models
+@model UserModel
+
+@{
+    ViewData["Title"] = "Un Utilisateur";
+}
+
+<h1>@ViewData["Title"]</h1>
+@await Html.PartialAsync("_ReseauxSociaux")
+
+
+
+<form>
+    <div class="form-group">
+        <input type="hidden" asp-for="Id" />
+        @Html.Label("Name","Nom")
+        @Html.TextBoxFor(model => model.Name)
+    </div>
+    <div class="form-group">
+        @Html.Label("Fistname","Prénom")
+        @Html.TextBoxFor(model => model.Firstname)
+    </div>
+    <div class="form-group">
+        @Html.Label("Mail","Mail")
+        @Html.TextBoxFor(model => model.Mail)
+    </div>
+</form>
+
+
+@section Scripts{
+}
+
+@section FichiersCss{
+}

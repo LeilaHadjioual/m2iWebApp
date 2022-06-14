@@ -38,5 +38,30 @@ namespace CoreFirstWebSite.Controllers
 
             return View(vm);
         }
+
+
+        public IActionResult GetUser(int idUser)
+        {
+            List<UserModel> allUsers = UsersRepository.getAllUsers();
+
+            UserModel myUser = null;
+            foreach (var user in allUsers)
+            {
+                if (user.Id == idUser)
+                {
+                    myUser = user;
+                }
+            }
+
+            //si je n'ai pas trouvé de renvoie 404
+            if (myUser == null)
+            {
+                return NotFound();
+            }
+            else //sinon je renvoie ma vue
+            {
+                return View(myUser);
+            }
+        }
     }
 }
