@@ -1,5 +1,6 @@
 ﻿using CoreFirstWebSite.Models.Users;
 using m2iWebApp.Models;
+using m2iWebApp.Repository.Users;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -10,8 +11,10 @@ namespace CoreFirstWebSite.Controllers
         public IActionResult Index()
         {
             //instancie une liste d'utilisateurs
-            List<UserModel> allUsers = new List<UserModel>()
-            {
+            List<UserModel> allUsers = UsersRepository.getAllUsers();
+
+
+            /**{
                 new UserModel()
                 {
                     Id = 1,
@@ -26,7 +29,7 @@ namespace CoreFirstWebSite.Controllers
                     Firstname = "Titi",
                     Mail = "titi.dupont@yopmail.com"
                 },
-            };
+            };**/
 
             UsersListViewModel vm = new UsersListViewModel
             {

@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "m2iWebApp.Models", "m2iWebA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "m2iWebApp.Repository", "m2iWebApp.Repository\m2iWebApp.Repository.csproj", "{BAA4EF5F-B495-4AFE-A443-CC13D467BE81}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asp.NetCoreMVC3.1", "asp.NetCoreMVC3.1", "{5BCB6196-EF20-4720-A7FA-A4E94AD6252E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asp.NetMVC5", "asp.NetMVC5", "{89D46150-CAD8-40C3-8A8F-06D0749CDF66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetFrameworkM2i", "NetFrameworkM2i\NetFrameworkM2i.csproj", "{83C6DBC6-4D77-400D-8E2F-E043F13618BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +33,19 @@ Global
 		{BAA4EF5F-B495-4AFE-A443-CC13D467BE81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAA4EF5F-B495-4AFE-A443-CC13D467BE81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAA4EF5F-B495-4AFE-A443-CC13D467BE81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C6DBC6-4D77-400D-8E2F-E043F13618BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C6DBC6-4D77-400D-8E2F-E043F13618BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C6DBC6-4D77-400D-8E2F-E043F13618BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C6DBC6-4D77-400D-8E2F-E043F13618BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A903AD7F-2352-4D05-A8AF-ED0A46A41946} = {5BCB6196-EF20-4720-A7FA-A4E94AD6252E}
+		{7688901A-84AE-4027-996F-BC6D3E5758FB} = {5BCB6196-EF20-4720-A7FA-A4E94AD6252E}
+		{BAA4EF5F-B495-4AFE-A443-CC13D467BE81} = {5BCB6196-EF20-4720-A7FA-A4E94AD6252E}
+		{83C6DBC6-4D77-400D-8E2F-E043F13618BC} = {89D46150-CAD8-40C3-8A8F-06D0749CDF66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7B27159-6E8E-4313-9014-C0BC419366F3}
