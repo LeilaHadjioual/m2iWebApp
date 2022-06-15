@@ -14,25 +14,25 @@ namespace CoreFirstWebSite.Controllers
         {
             //j'appelle mon modèle de domaine - je créé une liste de liens
             List<LinkModel> allLinks = LinksRepository.getAllLinks();
-                
+
             //ancienne version
-                /**new List<LinkModel>()
+            /**new List<LinkModel>()
+        {
+            new LinkModel()
             {
-                new LinkModel()
-                {
-                    Id = 1,
-                    Name = "Code My UI",
-                    Description = "Site avec des Liens pour le dev",
-                    Url = "https://codemyui.com"
-                },
-               new LinkModel()
-                {
-                    Id = 2,
-                    Name = "Exercism",
-                    Description = "Site avec des exos pour le dev",
-                    Url = "https://exercism.com"
-                },
-            ;**/
+                Id = 1,
+                Name = "Code My UI",
+                Description = "Site avec des Liens pour le dev",
+                Url = "https://codemyui.com"
+            },
+           new LinkModel()
+            {
+                Id = 2,
+                Name = "Exercism",
+                Description = "Site avec des exos pour le dev",
+                Url = "https://exercism.com"
+            },
+        ;**/
 
             //j'instancie pour pouvoir l'utiliser dans la vue, je transforme mon modèle de domaine en modèle de vue
             CategoryListViewModel vm = new CategoryListViewModel
@@ -54,16 +54,16 @@ namespace CoreFirstWebSite.Controllers
 
             //on parcours tous les liens et assigne l'id du lien au paramètre de la methode
             LinkModel monLien = null;
-            foreach(var lien in allLinks)
+            foreach (var lien in allLinks)
             {
-                if(lien.Id == idLien)
+                if (lien.Id == idLien)
                 {
                     monLien = lien;
                 }
             }
 
             //si je n'ai pas trouvé l'id, je renvoie une erreur 404
-            if(monLien == null)
+            if (monLien == null)
             {
                 return NotFound();
             }

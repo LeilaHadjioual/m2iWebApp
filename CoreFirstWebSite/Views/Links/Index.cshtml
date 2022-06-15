@@ -17,19 +17,19 @@
 </div>
 
 <div>
-    @foreach(var lien in Model.AllLinks)
+    @foreach (var lien in Model.AllLinks)
     {
         <p class="text-bold">@lien.Name</p>
         <p>@lien.Description</p>
-        <a class="btn btn-primary" asp-controller="Links" asp-action="Link" asp-route-idLien="@lien.Id" >Modifier</a>
+        <a class="btn btn-primary" asp-controller="Links" asp-action="Link" asp-route-idLien="@lien.Id">Modifier</a>
         <a class="btn btn-primary" href="@lien.Url" target="_blank">Go !</a>
     }
 </div>
 
 @section Scripts{
-    <script src="~/js/Links/index.js" asp-append-version="true"></script>
+<script src="~/js/Links/index.js" asp-append-version="true"></script>
 }
 
 @section FichiersCss{
-    <link rel="stylesheet" href="~/css/Links/index.css" />
+<link rel="stylesheet" href="~/css/Links/index.css" />
 }

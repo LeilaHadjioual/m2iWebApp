@@ -14,22 +14,22 @@
 </div>
 
 <div class="">
-    @foreach(var user in Model.AllUsers)
+    @foreach (var user in Model.AllUsers)
     {
         <p class="text-bold">@user.Name</p>
         <p>@user.Firstname</p>
         <p>@user.Mail</p>
         <a class="btn btn-primary" href="mailto:@user.Mail" target="_blank">Envoyer un mail</a>
-        <a class="btn btn-primary" asp-controller="Users" asp-action="GetUser" asp-route-idUser="@user.Id" >Modifier</a>
+        <a class="btn btn-primary" asp-controller="Users" asp-action="GetUser" asp-route-idUser="@user.Id">Modifier</a>
 
     }
 </div>
 
 @section Scripts{
-    <script src="~/js/Users/index.js" asp-append-version="true"></script>
+<script src="~/js/Users/index.js" asp-append-version="true"></script>
 }
 
 @section FichiersCss{
-    <!-- sera dans la section des fichiers css -->
-    <link rel="stylesheet" href="~/css/Users/index.css" />
+<!-- sera dans la section des fichiers css -->
+<link rel="stylesheet" href="~/css/Users/index.css" />
 }

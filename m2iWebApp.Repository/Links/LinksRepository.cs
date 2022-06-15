@@ -8,7 +8,7 @@ namespace m2iWebApp.Repository.Links
     public static class LinksRepository
     {
         public static List<LinkModel> getAllLinks()
-        {   //on instancie une liste de liens
+        {   //on créé une liste de liens
             return new List<LinkModel>()
             {
                  new LinkModel()
@@ -26,7 +26,7 @@ namespace m2iWebApp.Repository.Links
                     Url = "https://exercism.com"
                 },
             };
-              
+
         }
 
     }
