@@ -63,5 +63,10 @@ namespace CoreFirstWebSite.Controllers
                 return View(myUser);
             }
         }
+
+        public IActionResult UsersAjax()
+        {
+            return View();
+        }
     }
 }

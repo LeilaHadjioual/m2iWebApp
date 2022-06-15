@@ -17,6 +17,8 @@ namespace ApiNetCore
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -27,6 +29,19 @@ namespace ApiNetCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //autorise toutes les url - corrige l'erreur cors policy
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                policy =>
+                {
+                    policy.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+                });
+            });
+
+
             //permet de se connecter à la base de données à la demande
             services.AddDbContext<TodoContext>(opt =>
             //placer ici la connexion à la base de données avec UseSqlServer("conection string") à la place de use inmemorydatabase
@@ -61,6 +76,8 @@ namespace ApiNetCore
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {

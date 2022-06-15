@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ApiNetCore.Models;
 
 namespace ApiNetCore.Models
 {
@@ -10,5 +11,7 @@ namespace ApiNetCore.Models
         }
 
         public DbSet<TodoItem> TodoItems { get; set; }
+
+        public DbSet<MyUsers> MyUsers { get; set; }
     }
 }

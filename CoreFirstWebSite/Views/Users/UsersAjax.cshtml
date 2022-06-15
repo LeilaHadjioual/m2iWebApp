@@ -1,0 +1,43 @@
+﻿<h1>Liste des utilisateurs de mon api</h1>
+<br/>
+<br/>
+
+<h5>Créer un utilisateur</h5>
+<div>
+<input class="form-control" type="text" id="NomUser" placeholder="Nom de l'utilisateur" />
+<input class="form-control" type="text" id="PrenomUser" placeholder="Prenom de l'utilisateur" />
+<button type="button" class="btn btn-success" onclick="createUser()">Créer</button>
+</div>
+<br/>
+<br/>
+
+<button class="btn btn-primary" onclick="getAllUsers()">
+    voir les utilisateurs
+</button>
+
+<div id="allUsers">
+</div>
+
+<br />
+<br />
+<br />
+
+<h5>Créer un item</h5>
+<div>
+<input class="form-control" type="text" id="NomItem" placeholder="Nom de l'item" />
+<input class="form-control" type="checkbox" id="isCompleteItem" />
+<button type="button" class="btn btn-success" onclick="createItem()">Créer</button>
+</div>
+<br/>
+<br/>
+
+<button class="btn btn-primary" onclick="getAllTodoItems()">
+    voir les todos items
+</button>
+
+<div id="allTodoItems">
+</div>
+
+@section Scripts{
+<script src="~/js/Users/userAjax.js" asp-append-version="true"></script>
+}
