@@ -12,7 +12,7 @@ namespace NetFrameworkM2i.Controllers
         // GET: Links
         public ActionResult Index()
         {
-            var allLinks = LinksRepository.getAllLinks();
+            var allLinks = LinksRepository.GetAllLinks();
 
             var vm = new LinkViewModel()
             {

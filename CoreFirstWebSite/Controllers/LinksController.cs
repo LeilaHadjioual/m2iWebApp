@@ -13,7 +13,7 @@ namespace CoreFirstWebSite.Controllers
         public IActionResult Index()
         {
             //j'appelle mon modèle de domaine - je créé une liste de liens
-            List<LinkModel> allLinks = LinksRepository.getAllLinks();
+            List<LinkModel> allLinks = LinksRepository.GetAllLinks();
 
             //ancienne version
             /**new List<LinkModel>()
@@ -47,7 +47,7 @@ namespace CoreFirstWebSite.Controllers
         public IActionResult Link(int idLien)
         {
             //on récupère tous les liens
-            List<LinkModel> allLinks = LinksRepository.getAllLinks();
+            List<LinkModel> allLinks = LinksRepository.GetAllLinks();
 
             //utilisant linq à la place de foreach
             //var leLien = allLinks.FirstOrDefault(monLien => monLien.Id == idLien);

@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreFirstWebSite", "CoreFirstWebSite\CoreFirstWebSite.csproj", "{A903AD7F-2352-4D05-A8AF-ED0A46A41946}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreFirstWebSite", "CoreFirstWebSite\CoreFirstWebSite.csproj", "{A903AD7F-2352-4D05-A8AF-ED0A46A41946}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "m2iWebApp.Models", "m2iWebApp.Models\m2iWebApp.Models.csproj", "{7688901A-84AE-4027-996F-BC6D3E5758FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "m2iWebApp.Models", "m2iWebApp.Models\m2iWebApp.Models.csproj", "{7688901A-84AE-4027-996F-BC6D3E5758FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "m2iWebApp.Repository", "m2iWebApp.Repository\m2iWebApp.Repository.csproj", "{BAA4EF5F-B495-4AFE-A443-CC13D467BE81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "m2iWebApp.Repository", "m2iWebApp.Repository\m2iWebApp.Repository.csproj", "{BAA4EF5F-B495-4AFE-A443-CC13D467BE81}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asp.NetCoreMVC3.1", "asp.NetCoreMVC3.1", "{5BCB6196-EF20-4720-A7FA-A4E94AD6252E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asp.NetMVC5", "asp.NetMVC5", "{89D46150-CAD8-40C3-8A8F-06D0749CDF66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetFrameworkM2i", "NetFrameworkM2i\NetFrameworkM2i.csproj", "{83C6DBC6-4D77-400D-8E2F-E043F13618BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiNetCore", "ApiNetCore", "{D9A1A0CF-DAEE-40E7-AD4C-EDA70CF1B42E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiNetCore", "ApiNetCore\ApiNetCore.csproj", "{A320ADA9-8D77-4CED-9098-5990C322A4BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,10 @@ Global
 		{83C6DBC6-4D77-400D-8E2F-E043F13618BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83C6DBC6-4D77-400D-8E2F-E043F13618BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83C6DBC6-4D77-400D-8E2F-E043F13618BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A320ADA9-8D77-4CED-9098-5990C322A4BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A320ADA9-8D77-4CED-9098-5990C322A4BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A320ADA9-8D77-4CED-9098-5990C322A4BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A320ADA9-8D77-4CED-9098-5990C322A4BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{7688901A-84AE-4027-996F-BC6D3E5758FB} = {5BCB6196-EF20-4720-A7FA-A4E94AD6252E}
 		{BAA4EF5F-B495-4AFE-A443-CC13D467BE81} = {5BCB6196-EF20-4720-A7FA-A4E94AD6252E}
 		{83C6DBC6-4D77-400D-8E2F-E043F13618BC} = {89D46150-CAD8-40C3-8A8F-06D0749CDF66}
+		{A320ADA9-8D77-4CED-9098-5990C322A4BE} = {D9A1A0CF-DAEE-40E7-AD4C-EDA70CF1B42E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7B27159-6E8E-4313-9014-C0BC419366F3}

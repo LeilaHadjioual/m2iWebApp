@@ -10,7 +10,7 @@ namespace CoreFirstWebSite
         public async Task<IViewComponentResult> InvokeAsync()
         {
             //On récupère tous les liens 
-            var allLinks = LinksRepository.getAllLinks();
+            var allLinks = LinksRepository.GetAllLinks();
 
             var vm = new CategoryListViewModel
             {

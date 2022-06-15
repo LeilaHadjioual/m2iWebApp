@@ -7,7 +7,7 @@ namespace m2iWebApp.Repository.Links
 {
     public static class LinksRepository
     {
-        public static List<LinkModel> getAllLinks()
+        public static List<LinkModel> GetAllLinks()
         {   //on créé une liste de liens
             return new List<LinkModel>()
             {

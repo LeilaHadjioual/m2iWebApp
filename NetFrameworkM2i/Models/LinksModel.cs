@@ -22,7 +22,7 @@ namespace NetFrameworkM2i.Models
 
     public static class LinksRepository
     {
-        public static List<LinksModel> getAllLinks()
+        public static List<LinksModel> GetAllLinks()
         {
             return new List<LinksModel>()
             {
